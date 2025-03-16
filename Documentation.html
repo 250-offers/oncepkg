@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oncepkg - Install once and use forever across all projects on your machine.">
+    <meta name="keywords" content="npm, global package, install once, nodejs, package manager">
+    <meta name="author" content="Your Name">
+    <title>Oncepkg - Documentation</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; padding: 20px; background-color: #f4f4f4; }
+        h1, h2 { color: #333; }
+        code { background-color: #ddd; padding: 2px 5px; border-radius: 4px; }
+        pre { background: #222; color: #fff; padding: 10px; border-radius: 5px; }
+        .warning { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Oncepkg</h1>
+    <p><strong>Version:</strong> 1.0.0</p>
+    <p>Install npm packages globally once and use them across all projects on your machine.</p>
+
+    <h2>Features</h2>
+    <ul>
+        <li>Install a package globally once and use it in any project.</li>
+        <li>Automatically updates to the latest version when used in a new project.</li>
+        <li>List all globally installed packages via CLI.</li>
+        <li>Detects similar packages and prevents redundant installations.</li>
+        <li>Monitors npm command executions to keep track of installations.</li>
+        <li>Creates project structures for MERN and MEAN stacks with JavaScript or TypeScript.</li>
+    </ul>
+
+    <h2>Installation</h2>
+    <pre><code>npm install -g oncepkg</code></pre>
+
+    <h2>Usage</h2>
+    <p>Install a package globally:</p>
+    <pre><code>gpm install <package-name></code></pre>
+    <p>List installed packages:</p>
+    <pre><code>gpm --list</code></pre>
+    <p>Scan old projects for missing packages:</p>
+    <pre><code>gpm --scan</code></pre>
+    <p>Create a project with a template:</p>
+    <pre><code>gpm --template mern --js</code></pre>
+
+    <h2>Limitations</h2>
+    <ul>
+        <li>Requires global installation of the package.</li>
+        <li>Does not track manually installed packages outside of npm.</li>
+        <li>May not work well with system-wide installations or version conflicts.</li>
+    </ul>
+
+    <h2 class="warning">Warnings & Security Considerations</h2>
+    <ul>
+        <li>Be cautious when installing packages globally; ensure they are from trusted sources.</li>
+        <li>Keep packages updated to avoid security vulnerabilities.</li>
+        <li>Check for redundant or conflicting packages before installation.</li>
+        <li>Use version locking in critical projects to prevent unexpected updates.</li>
+    </ul>
+
+    <h2>Keywords</h2>
+    <p>npm, global install, package manager, node.js, install once, reusable packages, MERN, MEAN, JavaScript, TypeScript</p>
+
+    <h2>License</h2>
+    <p>MIT License</p>
+</body>
+</html>
